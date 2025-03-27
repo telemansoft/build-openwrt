@@ -24,8 +24,8 @@ echo "DISTRIB_SOURCECODE='immortalwrt'" >>package/base-files/files/etc/openwrt_r
 #
 # Add luci-app-amlogic
 # svn co https://github.com/ophub/luci-app-amlogic/trunk/luci-app-amlogic package/luci-app-amlogic
-svn co https://ghproxy.net/https://github.com/ophub/luci-app-amlogic/tree/main/luci-app-amlogic package/luci-app-amlogic
-#echo 'src-git amlogic https://ghproxy.net/https://github.com/ophub/luci-app-amlogic' >>feeds.conf.default
+# svn co https://ghproxy.net/https://github.com/ophub/luci-app-amlogic/trunk/luci-app-amlogic package/luci-app-amlogic
+echo 'src-git amlogic https://ghproxy.net/https://github.com/ophub/luci-app-amlogic' >>feeds.conf.default
 
 # Apply patch
 # git apply ../config/patches/{0001*,0002*}.patch --directory=feeds/luci
